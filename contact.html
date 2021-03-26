@@ -1,269 +1,285 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>AISCTA::Home</title>
-    <link href="./commonCss.css" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="responsiveslides.min.js"></script>
-    <script>
-      $(function () {
-        $(".rslides").responsiveSlides();
-      });
 
-      $(".rslides").responsiveSlides({
-        auto: true, // Boolean: Animate automatically, true or false
-        speed: 1500, // Integer: Speed of the transition, in milliseconds
-        timeout: 3000, // Integer: Time between slide transitions, in milliseconds
-        pager: false, // Boolean: Show pager, true or false
-        nav: false, // Boolean: Show navigation, true or false
-        random: true, // Boolean: Randomize the order of the slides, true or false
-        pause: false, // Boolean: Pause on hover, true or false
-        pauseControls: true, // Boolean: Pause when hovering controls, true or false
-        prevText: "Previous", // String: Text for the "previous" button
-        nextText: "Next", // String: Text for the "next" button
-        maxwidth: "", // Integer: Max-width of the slideshow, in pixels
-        navContainer: "", // Selector: Where controls should be appended to, default is after the 'ul'
-        manualControls: "", // Selector: Declare custom pager navigation
-        namespace: "rslides", // String: Change the default namespace used
-        before: function () {}, // Function: Before callback
-        after: function () {} // Function: After callback
-      });
-    </script>
+<head>
+  <meta charset="utf-8">
+  <title>AISCTA::Home</title>
+  <link href="./commonCss.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="./js/responsiveslides.min.js"></script>
+  <script>
+    $(function () {
+      $(".rslides").responsiveSlides();
+    });
 
-    <style>
-      #contactDivs div {
-        #border: 1px solid blue;
-        text-align: center;
-        font-weight: 600;
-        float: left;
-        padding: 15px;
-      }
-      .col-md-4 {
-        #border: 1px solid green;
-        float: left;
-        padding: 10px;
-        width: 33.32%;
-      }
-      .col-md-4 a {
-        color: #272727;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 14px;
-        letter-spacing: 1.5px;
-      }
-      .img-responsive {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
+    $(".rslides").responsiveSlides({
+      auto: true, // Boolean: Animate automatically, true or false
+      speed: 1500, // Integer: Speed of the transition, in milliseconds
+      timeout: 3000, // Integer: Time between slide transitions, in milliseconds
+      pager: false, // Boolean: Show pager, true or false
+      nav: false, // Boolean: Show navigation, true or false
+      random: true, // Boolean: Randomize the order of the slides, true or false
+      pause: false, // Boolean: Pause on hover, true or false
+      pauseControls: true, // Boolean: Pause when hovering controls, true or false
+      prevText: "Previous", // String: Text for the "previous" button
+      nextText: "Next", // String: Text for the "next" button
+      maxwidth: "", // Integer: Max-width of the slideshow, in pixels
+      navContainer: "", // Selector: Where controls should be appended to, default is after the 'ul'
+      manualControls: "", // Selector: Declare custom pager navigation
+      namespace: "rslides", // String: Change the default namespace used
+      before: function () { }, // Function: Before callback
+      after: function () { } // Function: After callback
+    });
+  </script>
 
-      .rslides {
-        position: relative;
-        list-style: none;
-        overflow: hidden;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-      }
+  <style>
+    #contactDivs div {
+      #border: 1px solid blue;
+      text-align: center;
+      font-weight: 600;
+      float: left;
+      padding: 15px;
+    }
 
-      .rslides li {
-        -webkit-backface-visibility: hidden;
-        position: absolute;
-        display: none;
-        width: 100%;
-        left: 0;
-        top: 0;
-      }
+    .col-md-4 {
+      #border: 1px solid green;
+      float: left;
+      padding: 10px;
+      width: 33.32%;
+    }
 
-      .rslides li:first-child {
-        position: relative;
-        display: block;
-        float: left;
-      }
+    .col-md-4 a {
+      color: #272727;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+    }
 
-      .rslides img {
-        display: block;
+    .img-responsive {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
 
-        margin-left: auto;
-        margin-right: auto;
+    .rslides {
+      position: relative;
+      list-style: none;
+      overflow: hidden;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
 
-        border: 2px solid #C7C11D;
-        border-radius: 10px;
-      }
-      #slider {
-        height: auto;
-        max-height: 100%;
-        width: 100%;
-        max-width: 100%;
-        #border: 1px solid blue;
-      }
+    .rslides li {
+      -webkit-backface-visibility: hidden;
+      position: absolute;
+      display: none;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
 
-      nav {
-        width: 100%;
-        background: linear-gradient(#B43104,#FFBF00);
-        border-radius: 5px;
-      }
+    .rslides li:first-child {
+      position: relative;
+      display: block;
+      float: left;
+    }
 
-      nav ul {
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-      }
+    .rslides img {
+      display: block;
 
-      nav ul li {
-        list-style: none;
-        float: left;
-        text-align: center;
-        width: 16.666666%;
-        /* fallback for non-calc() browsers */
-        box-sizing: border-box;
-      }
+      margin-left: auto;
+      margin-right: auto;
 
-      nav ul li a {
-        display: block;
-        text-decoration: none;
-        padding: 5px 0;
-        color: #3B170B;
-        font-family: tahoma;
-        font-size: 15px;
-        font-weight: bold;
-        text-shadow: 2px 2px 2px #FF8000;
-        background: linear-gradient(#B43104,#FFBF00);
-      }
-      a:active,
-      nav ul li a:hover {
-        text-decoration: none;
-        color: #F2F5A9;
-        text-shadow: 2px 2px 2px #FFBF00;
-        border: 2px solid #FFBF00;
-        border-radius: 5px;
-      }
-      video {
-        margin-bottom: 50px;
-        border: 0 double black;
-        box-shadow: 6px 6px 12px #999;
-        border-radius: 5px;
-        height: auto;
-        width: 100%;
-      }
-    </style>
-  </head>
+      border: 2px solid #C7C11D;
+      border-radius: 10px;
+    }
 
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12" id="body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12" id="headerDivWithNav">
-                <div id="page-header">
-                  <!--nav comes here-->
-                </div>
-                <div id="navigation">
-                  <nav>
-                    <ul>
-                      <li>
-                        <a href="./index.html">Home</a>
-                      </li>
-                      <li>
-                        <a href="./about.html">About</a>
-                      </li>
-                      <li>
-                        <a href="./projects.html">Projects</a>
-                      </li>
-                      <li>
-                        <a href="./news.html">News</a>
-                      </li>
-                      <li>
-                        <a href="./gallery.html">Gallery</a>
-                      </li>
-                      <li>
-                        <a href="./contact.html">Contact</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
+    #slider {
+      height: auto;
+      max-height: 100%;
+      width: 100%;
+      max-width: 100%;
+      #border: 1px solid blue;
+    }
+
+    nav {
+      width: 100%;
+      background: linear-gradient(#B43104, #FFBF00);
+      border-radius: 5px;
+    }
+
+    nav ul {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      list-style: none;
+      float: left;
+      text-align: center;
+      width: 16.666666%;
+      /* fallback for non-calc() browsers */
+      box-sizing: border-box;
+    }
+
+    nav ul li a {
+      display: block;
+      text-decoration: none;
+      padding: 5px 0;
+      color: #3B170B;
+      font-family: tahoma;
+      font-size: 15px;
+      font-weight: bold;
+      text-shadow: 2px 2px 2px #FF8000;
+      background: linear-gradient(#B43104, #FFBF00);
+    }
+
+    a:active,
+    nav ul li a:hover {
+      text-decoration: none;
+      color: #F2F5A9;
+      text-shadow: 2px 2px 2px #FFBF00;
+      border: 2px solid #FFBF00;
+      border-radius: 5px;
+    }
+
+    video {
+      margin-bottom: 50px;
+      border: 0 double black;
+      box-shadow: 6px 6px 12px #999;
+      border-radius: 5px;
+      height: auto;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12" id="body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12" id="headerDivWithNav">
+              <div id="page-header">
+                <!--nav comes here-->
+              </div>
+              <div id="navigation">
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                      <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                      <a href="./projects.html">Projects</a>
+                    </li>
+                    <li>
+                      <a href="./news.html">News</a>
+                    </li>
+                    <li>
+                      <a href="./gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                      <a href="./contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="container-fluid">
-            <div class="row"  id="middleContent">
-              <div class="col-md-2" id="leftPane" style="border:0px solid black;"></div>
-              <div class="col-md-8" id="centerPane">
-                <h2 style="text-decoration:blink; color:#323232; text-align:center; font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; margin-bottom:30px">Contact Us</h2>
+        <div class="container-fluid">
+          <div class="row" id="middleContent">
+            <div class="col-md-2" id="leftPane" style="border:0px solid black;"></div>
+            <div class="col-md-8" id="centerPane">
+              <h2
+                style="text-decoration:blink; color:#323232; text-align:center; font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; margin-bottom:30px">
+                Contact Us</h2>
+              <div class="container-fluid">
+                <div class="row" id="contactDivs">
+                  <div class="col-md-4">
+                    <p>Mr. L. Mal Sri de Silva<br>
+                      No; 20 “MAL SRI”,<br>
+                      Church Road,<br>
+                      Keselwatta,<br>
+                      Panadura.<br><br>
+                      0773148570<br>
+                      0718289320</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p>Mr. K. Lalith Chandrasiri Fernando<br>
+                      No:133 A6,<br>
+                      Bandaranayake Avenue,<br>
+                      Rambukkana South,<br>
+                      Bandaragama.<br><br>
+                      0723492374<br>
+                      0777386932</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p>Mr. H. Renuka C. Piyasundara<br>
+                      No:128 A,<br>
+                      Gangarama Road,<br>
+                      Werahera,<br>
+                      Boralesgamuwa.<br><br>
+                      0777683392<br>
+                      0725594259</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12" style="text-align:center; padding:20px;">
+                    <img src="./images/Scan10001.jpg" width="75%" height="100%"
+                      style="border:1px solid #B7B111; border-radius:5px"><img src="./images/Scan2.jpg" width="75%"
+                      height="100%" style="border:1px solid #B7B111; border-radius:5px"><img src="./images/Scan3.jpg"
+                      width="75%" height="100%" style="border:1px solid #B7B111; border-radius:5px"><img
+                      src="./images/Scan4.jpg" width="75%" height="100%"
+                      style="border:1px solid #B7B111; border-radius:5px"><img src="./images/Scan5.jpg" width="75%"
+                      height="100%" style="border:1px solid #B7B111; border-radius:5px">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2" id="rightPane"></div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="col-md-12">
+            <div id="footer">
+              <div id="footerContent">
                 <div class="container-fluid">
-                  <div class="row" id="contactDivs">
-                    <div class="col-md-4">
-                      <p>Mr. L. Mal Sri de Silva<br>
-                                        No; 20 “MAL SRI”,<br>
-                                        Church Road,<br>
-                                        Keselwatta,<br>
-                                        Panadura.<br><br>                                        
-                                        0773148570<br>
-                                        0718289320</p>
+                  <div class="row">
+                    <div class="col-md-4" style="text-align:justify;">
+                      <a href="./index.html">Home</a><br>
+                      <a href="./about.html">About</a><br>
+                      <a href="./projects.html">Projects</a>
                     </div>
-                    <div class="col-md-4">
-                      <p>Mr. K. Lalith Chandrasiri Fernando<br>
-                                        No:133 A6,<br>
-                                        Bandaranayake Avenue,<br>
-                                        Rambukkana South,<br>
-                                        Bandaragama.<br><br>                                        
-                                        0723492374<br>
-                                        0777386932</p>
+                    <div class="col-md-4" style="text-align:justify">
+                      <a href="./news.html">News</a><br>
+                      <a href="./gallery.html">Gallery</a><br>
+                      <a href="./contact.html">Contacts</a><br>
                     </div>
-                    <div class="col-md-4">
-                      <p>Mr. H. Renuka C. Piyasundara<br>
-                                        No:128 A,<br>
-                                        Gangarama Road,<br>
-                                        Werahera,<br>
-                                        Boralesgamuwa.<br><br>                                        
-                                        0777683392<br>
-                                        0725594259</p>
+                    <div class="col-md-4" style="text-align:justify">
+                      <a href="http://www.childprotection.gov.lk/" target="_blank"><img class="img-responsive"
+                          src="./images/ncpa.png">NCPA</a>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12" style="text-align:center; padding:20px;">
-                      <img src="./images/Scan10001.jpg" width="75%" height="100%" style="border:1px solid #B7B111; border-radius:5px"><img src="./images/Scan2.jpg" width="75%" height="100%" style="border:1px solid #B7B111; border-radius:5px"><img src="./images/Scan3.jpg" width="75%" height="100%" style="border:1px solid #B7B111; border-radius:5px"><img src="./images/Scan4.jpg" width="75%" height="100%" style="border:1px solid #B7B111; border-radius:5px"><img src="./images/Scan5.jpg" width="75%" height="100%" style="border:1px solid #B7B111; border-radius:5px">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2" id="rightPane"></div>
-            </div>
-          </div>
-
-          <div class="container-fluid">
-            <div class="col-md-12" >
-              <div id="footer">
-                <div id="footerContent">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4" style="text-align:justify;">
-                        <a href="./index.html">Home</a><br>
-                        <a href="./about.html">About</a><br>
-                        <a href="./projects.html">Projects</a>
-                      </div>
-                      <div class="col-md-4" style="text-align:justify">
-                        <a href="./news.html">News</a><br>
-                        <a href="./gallery.html">Gallery</a><br>
-                        <a href="./contact.html">Contacts</a><br>
-                      </div>
-                      <div class="col-md-4" style="text-align:justify">
-                        <a href="http://www.childprotection.gov.lk/" target="_blank"><img class="img-responsive" src="./images/ncpa.png">NCPA</a>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12" style="padding:4px;">
-                        <p style="width:100%;height:100%;font-size:12px;font-weight:600;">Copyright © 2015. All Rights Reserved.</p>
-                      </div>
+                    <div class="col-md-12" style="padding:4px;">
+                      <p style="width:100%;height:100%;font-size:12px;font-weight:600;">Copyright © 2015. All Rights
+                        Reserved.</p>
                     </div>
                   </div>
                 </div>
@@ -273,5 +289,7 @@
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

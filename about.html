@@ -1,279 +1,314 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>AISCTA::About</title>
-    <link href="./commonCss.css" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="responsiveslides.min.js"></script>
-    <script>
-      $(function () {
-        $(".rslides").responsiveSlides();
-      });
 
-      $(".rslides").responsiveSlides({
-        auto: true, // Boolean: Animate automatically, true or false
-        speed: 1500, // Integer: Speed of the transition, in milliseconds
-        timeout: 3000, // Integer: Time between slide transitions, in milliseconds
-        pager: false, // Boolean: Show pager, true or false
-        nav: false, // Boolean: Show navigation, true or false
-        random: true, // Boolean: Randomize the order of the slides, true or false
-        pause: false, // Boolean: Pause on hover, true or false
-        pauseControls: true, // Boolean: Pause when hovering controls, true or false
-        prevText: "Previous", // String: Text for the "previous" button
-        nextText: "Next", // String: Text for the "next" button
-        maxwidth: "", // Integer: Max-width of the slideshow, in pixels
-        navContainer: "", // Selector: Where controls should be appended to, default is after the 'ul'
-        manualControls: "", // Selector: Declare custom pager navigation
-        namespace: "rslides", // String: Change the default namespace used
-        before: function () {}, // Function: Before callback
-        after: function () {} // Function: After callback
-      });
-    </script>
+<head>
+  <meta charset="utf-8">
+  <title>AISCTA::About</title>
+  <link href="./commonCss.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="./js/responsiveslides.min.js"></script>
+  <script>
+    $(function () {
+      $(".rslides").responsiveSlides();
+    });
 
-    <style>
-      .aboutUs-member-list img {
-        border: 2px solid #CDD12C;
-        border-radius: 10px;
-      }
-      .aboutUs-member-list li {
-        margin-bottom: 40px;
-        font-size: 15px;
-      }
-      .col-md-4 {
-        #border: 1px solid green;
-        float: left;
-        padding: 10px;
-        width: 33.32%;
-      }
-      .col-md-4 a {
-        color: #272727;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 14px;
-        letter-spacing: 1.5px;
-      }
-      .img-responsive {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
+    $(".rslides").responsiveSlides({
+      auto: true, // Boolean: Animate automatically, true or false
+      speed: 1500, // Integer: Speed of the transition, in milliseconds
+      timeout: 3000, // Integer: Time between slide transitions, in milliseconds
+      pager: false, // Boolean: Show pager, true or false
+      nav: false, // Boolean: Show navigation, true or false
+      random: true, // Boolean: Randomize the order of the slides, true or false
+      pause: false, // Boolean: Pause on hover, true or false
+      pauseControls: true, // Boolean: Pause when hovering controls, true or false
+      prevText: "Previous", // String: Text for the "previous" button
+      nextText: "Next", // String: Text for the "next" button
+      maxwidth: "", // Integer: Max-width of the slideshow, in pixels
+      navContainer: "", // Selector: Where controls should be appended to, default is after the 'ul'
+      manualControls: "", // Selector: Declare custom pager navigation
+      namespace: "rslides", // String: Change the default namespace used
+      before: function () { }, // Function: Before callback
+      after: function () { } // Function: After callback
+    });
+  </script>
 
-      .rslides {
-        position: relative;
-        list-style: none;
-        overflow: hidden;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-      }
+  <style>
+    .aboutUs-member-list img {
+      border: 2px solid #CDD12C;
+      border-radius: 10px;
+    }
 
-      .rslides li {
-        -webkit-backface-visibility: hidden;
-        position: absolute;
-        display: none;
-        width: 100%;
-        left: 0;
-        top: 0;
-      }
+    .aboutUs-member-list li {
+      margin-bottom: 40px;
+      font-size: 15px;
+    }
 
-      .rslides li:first-child {
-        position: relative;
-        display: block;
-        float: left;
-      }
+    .col-md-4 {
+      #border: 1px solid green;
+      float: left;
+      padding: 10px;
+      width: 33.32%;
+    }
 
-      .rslides img {
-        display: block;
+    .col-md-4 a {
+      color: #272727;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+    }
 
-        margin-left: auto;
-        margin-right: auto;
+    .img-responsive {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
 
-        border: 2px solid #C7C11D;
-        border-radius: 10px;
-      }
-      #slider {
-        height: auto;
-        max-height: 100%;
-        width: 100%;
-        max-width: 100%;
-        #border: 1px solid blue;
-      }
+    .rslides {
+      position: relative;
+      list-style: none;
+      overflow: hidden;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
 
-      nav {
-        width: 100%;
-        background: linear-gradient(#B43104,#FFBF00);
-        border-radius: 5px;
-      }
+    .rslides li {
+      -webkit-backface-visibility: hidden;
+      position: absolute;
+      display: none;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
 
-      nav ul {
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-      }
+    .rslides li:first-child {
+      position: relative;
+      display: block;
+      float: left;
+    }
 
-      nav ul li {
-        list-style: none;
-        float: left;
-        text-align: center;
-        width: 16.666666%;
-        /* fallback for non-calc() browsers */
-        box-sizing: border-box;
-      }
+    .rslides img {
+      display: block;
 
-      nav ul li a {
-        display: block;
-        text-decoration: none;
-        padding: 5px 0;
-        color: #3B170B;
-        font-family: tahoma;
-        font-size: 15px;
-        font-weight: bold;
-        text-shadow: 2px 2px 2px #FF8000;
-        background: linear-gradient(#B43104,#FFBF00);
-      }
-      a:active,
-      nav ul li a:hover {
-        text-decoration: none;
-        color: #F2F5A9;
-        text-shadow: 2px 2px 2px #FFBF00;
-        border: 2px solid #FFBF00;
-        border-radius: 5px;
-      }
-      video {
-        margin-bottom: 50px;
-        border: 0 double black;
-        box-shadow: 6px 6px 12px #999;
-        border-radius: 5px;
-        height: auto;
-        width: 100%;
-      }
-    </style>
-  </head>
+      margin-left: auto;
+      margin-right: auto;
 
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12" id="body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12" id="headerDivWithNav">
-                <div id="page-header">
-                  <!--nav comes here-->
-                </div>
-                <div id="navigation">
-                  <nav>
-                    <ul>
-                      <li>
-                        <a href="./index.html">Home</a>
-                      </li>
-                      <li>
-                        <a href="./about.html">About</a>
-                      </li>
-                      <li>
-                        <a href="./projects.html">Projects</a>
-                      </li>
-                      <li>
-                        <a href="./news.html">News</a>
-                      </li>
-                      <li>
-                        <a href="./gallery.html">Gallery</a>
-                      </li>
-                      <li>
-                        <a href="./contact.html">Contact</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
+      border: 2px solid #C7C11D;
+      border-radius: 10px;
+    }
+
+    #slider {
+      height: auto;
+      max-height: 100%;
+      width: 100%;
+      max-width: 100%;
+      #border: 1px solid blue;
+    }
+
+    nav {
+      width: 100%;
+      background: linear-gradient(#B43104, #FFBF00);
+      border-radius: 5px;
+    }
+
+    nav ul {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      list-style: none;
+      float: left;
+      text-align: center;
+      width: 16.666666%;
+      /* fallback for non-calc() browsers */
+      box-sizing: border-box;
+    }
+
+    nav ul li a {
+      display: block;
+      text-decoration: none;
+      padding: 5px 0;
+      color: #3B170B;
+      font-family: tahoma;
+      font-size: 15px;
+      font-weight: bold;
+      text-shadow: 2px 2px 2px #FF8000;
+      background: linear-gradient(#B43104, #FFBF00);
+    }
+
+    a:active,
+    nav ul li a:hover {
+      text-decoration: none;
+      color: #F2F5A9;
+      text-shadow: 2px 2px 2px #FFBF00;
+      border: 2px solid #FFBF00;
+      border-radius: 5px;
+    }
+
+    video {
+      margin-bottom: 50px;
+      border: 0 double black;
+      box-shadow: 6px 6px 12px #999;
+      border-radius: 5px;
+      height: auto;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12" id="body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12" id="headerDivWithNav">
+              <div id="page-header">
+                <!--nav comes here-->
               </div>
-            </div>
-          </div>
-
-          <div class="container-fluid">
-            <div class="row"  id="middleContent">
-              <div class="col-md-2" id="leftPane" style="border:0px solid black;">
-                <!--advertisements-->
-                <!--a><img id="adverts" src="./images/advertisementDefault.jpg" width="100%" height="300" alt="ad1" ></a-->
-              </div>
-              <div class="col-md-8" id="centerPane">
-                <div id="aboutus" style="border:0px; padding:10px;">
-                  <h2 style="text-decoration:blink; color:#323232; text-align:center; font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; margin-bottom:30px">About Us</h2>
-                  <ul style="list-style:none">
-                    <li style="margin-bottom:50px; text-align:center">
-                      <p style="font-size:16px;font-weight:500;width:90%; margin-left:auto; margin-right:auto ">After 12 years of successful endurance of this organization Annual General Meeting held on 2012 of June. The new Committee members are elected for New Year with projects.</p>
+              <div id="navigation">
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="./index.html">Home</a>
                     </li>
                     <li>
-                      <h4>Committee Members(2012/2015)</h4>
-                      <ul style="list-style:none" class="aboutUs-member-list">
-                        <li>
-                          <img src="./images/consultant.jpg" alt="consultant" width="150px" height="180px">
-                          <p>
-                            <strong>Consultant</strong><br>Mr.P.R.Perera is a member from year 2001 and he was acting as secretary from year 2002. He now worked with new committee as a consultant to the organization. if any queries via the No; 49/c, rukamale, pannipitiya. Telephone 0773713369.</p>
-                        </li>
-                        <li>
-                          <img src="./images/president.jpg" alt="president" width="150px" height="180px">
-                          <p>
-                            <strong>President</strong><br>Mr. L. Mal Sri De Silva is an active member from year 2008. He was acting as a Vice president of from year 2009. From the election which held on year 07th July 2012 Committee meeting he elect as president with new vision and future plans he elect as president. If any queries he is contact via the No; 20, “MAL SRI”, Church Road, Keselwatta, Panadura. Telephone 0773148570,0718289320.</p>
-                        </li>
-                        <li>
-                          <img src="./images/vicePresident.jpg" alt="VP"  width="150px" height="180px">
-                          <p>
-                            <strong>Vice President</strong><br>Mr.L.D.R.W. Wijethunga is also a good facilitator in our organization since year 2000. He was worked as committee member in initiated organization. If for any queries you can reach via No 87/29, Ernest Place, Lakshapathiya, Moratuwa. Telphone 0112644121.</p>
-                        </li>
-                        <li>
-                          <img src="./images/secratery.jpg" alt="secretery" width="150px" height="180px">
-                          <p>
-                            <strong>Secretary</strong><br>Mr. K.L.C Fernando is a member since 2007. He was served and act treasure of this association from 2009. He elected as a secretary from the Annual General meeting held on 17th July 2012. If any queries you can reach , No: 133/A6, Bandaranayake Mw, Ramukkana South, Bandaragama. Telephone 0723492374.</p>
-                        </li>
-                        <li>
-                          <img src="./images/viceSecretery.jpg" alt="VS" width="150px" height="180px">
-                          <p>
-                            <strong>Vice Secretary</strong><br>Mr. W.D.C. Jayasan Priyantha is a member from 2003. He is acting member in St. Benedict’s Kotahena Area. Any Clarifications could be reach via 22, Thotupola Road, Welisara, Ragama. Telephone 0112233242.</p>
-                        </li>
-                        <li>
-                          <img src="./images/treasurer.jpg" alt="treasurer" width="150px" height="180px">
-                          <p>
-                            <strong>Treasurer</strong><br>Mr. H.R.C. Piyasundara is a member from 2004 and worked as an organizer from year 2007 for organization. He elected as Treasurer. If any queries you can reach him via No128/A,Gangarame Road, Werahera, Boralesgamuwa. Telephone 0777683392.</p>
-                        </li>
-                      </ul>
+                      <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                      <a href="./projects.html">Projects</a>
+                    </li>
+                    <li>
+                      <a href="./news.html">News</a>
+                    </li>
+                    <li>
+                      <a href="./gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                      <a href="./contact.html">Contact</a>
                     </li>
                   </ul>
-                </div>
+                </nav>
               </div>
-              <div class="col-md-2" id="rightPane"></div>
             </div>
           </div>
+        </div>
 
-          <div class="container-fluid">
-            <div class="col-md-12" >
-              <div id="footer">
-                <div id="footerContent">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4" style="text-align:justify;">
-                        <a href="./index.html">Home</a><br>
-                        <a href="./about.html">About</a><br>
-                        <a href="./projects.html">Projects</a>
-                      </div>
-                      <div class="col-md-4" style="text-align:justify">
-                        <a href="./news.html">News</a><br>
-                        <a href="./gallery.html">Gallery</a><br>
-                        <a href="./contact.html">Contacts</a><br>
-                      </div>
-                      <div class="col-md-4" style="text-align:justify">
-                        <a href="http://www.childprotection.gov.lk/" target="_blank"><img class="img-responsive" src="./images/ncpa.png">NCPA</a>
-                      </div>
+        <div class="container-fluid">
+          <div class="row" id="middleContent">
+            <div class="col-md-2" id="leftPane" style="border:0px solid black;">
+              <!--advertisements-->
+              <!--a><img id="adverts" src="./images/advertisementDefault.jpg" width="100%" height="300" alt="ad1" ></a-->
+            </div>
+            <div class="col-md-8" id="centerPane">
+              <div id="aboutus" style="border:0px; padding:10px;">
+                <h2
+                  style="text-decoration:blink; color:#323232; text-align:center; font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; margin-bottom:30px">
+                  About Us</h2>
+                <ul style="list-style:none">
+                  <li style="margin-bottom:50px; text-align:center">
+                    <p style="font-size:16px;font-weight:500;width:90%; margin-left:auto; margin-right:auto ">After 12
+                      years of successful endurance of this organization Annual General Meeting held on 2012 of June.
+                      The new Committee members are elected for New Year with projects.</p>
+                  </li>
+                  <li>
+                    <h4>Committee Members(2012/2015)</h4>
+                    <ul style="list-style:none" class="aboutUs-member-list">
+                      <li>
+                        <img src="./images/consultant.jpg" alt="consultant" width="150px" height="180px">
+                        <p>
+                          <strong>Consultant</strong><br>Mr.P.R.Perera is a member from year 2001 and he was acting as
+                          secretary from year 2002. He now worked with new committee as a consultant to the
+                          organization. if any queries via the No; 49/c, rukamale, pannipitiya. Telephone 0773713369.
+                        </p>
+                      </li>
+                      <li>
+                        <img src="./images/president.jpg" alt="president" width="150px" height="180px">
+                        <p>
+                          <strong>President</strong><br>Mr. L. Mal Sri De Silva is an active member from year 2008. He
+                          was acting as a Vice president of from year 2009. From the election which held on year 07th
+                          July 2012 Committee meeting he elect as president with new vision and future plans he elect as
+                          president. If any queries he is contact via the No; 20, “MAL SRI”, Church Road, Keselwatta,
+                          Panadura. Telephone 0773148570,0718289320.
+                        </p>
+                      </li>
+                      <li>
+                        <img src="./images/vicePresident.jpg" alt="VP" width="150px" height="180px">
+                        <p>
+                          <strong>Vice President</strong><br>Mr.L.D.R.W. Wijethunga is also a good facilitator in our
+                          organization since year 2000. He was worked as committee member in initiated organization. If
+                          for any queries you can reach via No 87/29, Ernest Place, Lakshapathiya, Moratuwa. Telphone
+                          0112644121.
+                        </p>
+                      </li>
+                      <li>
+                        <img src="./images/secratery.jpg" alt="secretery" width="150px" height="180px">
+                        <p>
+                          <strong>Secretary</strong><br>Mr. K.L.C Fernando is a member since 2007. He was served and act
+                          treasure of this association from 2009. He elected as a secretary from the Annual General
+                          meeting held on 17th July 2012. If any queries you can reach , No: 133/A6, Bandaranayake Mw,
+                          Ramukkana South, Bandaragama. Telephone 0723492374.
+                        </p>
+                      </li>
+                      <li>
+                        <img src="./images/viceSecretery.jpg" alt="VS" width="150px" height="180px">
+                        <p>
+                          <strong>Vice Secretary</strong><br>Mr. W.D.C. Jayasan Priyantha is a member from 2003. He is
+                          acting member in St. Benedict’s Kotahena Area. Any Clarifications could be reach via 22,
+                          Thotupola Road, Welisara, Ragama. Telephone 0112233242.
+                        </p>
+                      </li>
+                      <li>
+                        <img src="./images/treasurer.jpg" alt="treasurer" width="150px" height="180px">
+                        <p>
+                          <strong>Treasurer</strong><br>Mr. H.R.C. Piyasundara is a member from 2004 and worked as an
+                          organizer from year 2007 for organization. He elected as Treasurer. If any queries you can
+                          reach him via No128/A,Gangarame Road, Werahera, Boralesgamuwa. Telephone 0777683392.
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2" id="rightPane"></div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="col-md-12">
+            <div id="footer">
+              <div id="footerContent">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-4" style="text-align:justify;">
+                      <a href="./index.html">Home</a><br>
+                      <a href="./about.html">About</a><br>
+                      <a href="./projects.html">Projects</a>
                     </div>
-                    <div class="row">
-                      <div class="col-md-12" style="padding:4px;">
-                        <p style="width:100%;height:100%;font-size:12px;font-weight:600;">Copyright © 2015. All Rights Reserved.</p>
-                      </div>
+                    <div class="col-md-4" style="text-align:justify">
+                      <a href="./news.html">News</a><br>
+                      <a href="./gallery.html">Gallery</a><br>
+                      <a href="./contact.html">Contacts</a><br>
+                    </div>
+                    <div class="col-md-4" style="text-align:justify">
+                      <a href="http://www.childprotection.gov.lk/" target="_blank"><img class="img-responsive"
+                          src="./images/ncpa.png">NCPA</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12" style="padding:4px;">
+                      <p style="width:100%;height:100%;font-size:12px;font-weight:600;">Copyright © 2015. All Rights
+                        Reserved.</p>
                     </div>
                   </div>
                 </div>
@@ -283,5 +318,7 @@
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
