@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+/*common css styles*/
+#body{
+		/*border: 1px solid yellow;*/
+		background-color : #EFD700;
+		background-image:url(./images/backgroundNew.jpg);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;	
+		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	}
+
+#page-header{
+		padding:0px;
+		/* #border:1px solid blue;		
+		#background-color:#F8F747;	 */
+		background-image:url(./images/newUpdatedHeader.jpg);
+		background-position:center;
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+		height:160px;
+		width:100%;
+		margin-left:auto;
+		margin-right:auto;	
+	}
+/*
+#headerDivWithNav{
+		border:1px solid green;
+		position:fixed;
+		height:200px;
+		overflow:hidden;
+		
+	}
+*/
+#navigation{
+		height:30px;
+		max-height:30px;
+	}
+/*scroll bar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #ccc;
+	border-radius:10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+	border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+/*temp*/
+.col-md-2{
+		/* #border:1px solid green; */
+		float:left;	
+	}
+	
+#centerPane{
+		/* #border:1px solid blue; */
+		float:left;
+		padding:2px;
+		width:66.64%;
+		max-width:66.64%;
+		height:auto;	
+	}
+#middleContent{
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:5px;
+		/* #background-color:#D52A2D;	 */
+	}
+#leftPane{
+		padding:2px;
+		height:auto;
+		max-height:auto;
+		width:16.66%;
+		max-width:16.66%;
+		/* #background-color:#6E4849; */
+		float:left;
+	}
+#rightPane{
+		padding:2px;
+		height:auto;
+		max-height:auto;
+		width:16.66%;
+		max-width:16.66%;
+		float:left;
+		/* #background-color:#6E4849; */
+	}
+#danweem{
+	height:auto;
+	width:100%;
+	margin-bottom:5px;
+	margin-top:5px; 
+	border-radius:10px;	
+	}
+#footer{
+		width:100%;
+		/* #border:1px dotted red; */
+		text-align:center;
+		height:150px;
+		max-height:250px;
+		/* #background-color:#BCBCBC; */
+		background-image:url(./images/footer.jpg);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;	
+	}
+#footerContent{
+		font-size:14px;	
+	}
+
